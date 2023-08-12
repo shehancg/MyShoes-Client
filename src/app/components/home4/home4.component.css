@@ -1,0 +1,35 @@
+.ct1{
+  padding-left: 0 !important;
+  width: 100%;
+  padding-bottom: 20vh;
+
+}
+.hdr{
+  height: 78vh;
+  width: 100%;
+}
+.hdr2{
+  height: 39vh;
+  width: 100%;
+  padding-top: 2vh;
+}
+.hdr1{
+  height: 39vh;
+  width: 100%;
+  padding-bottom: 2vh;
+}
+.cl1{
+  padding-left: 2%;
+}
+h1{
+  text-align: center;
+  padding-top: 10vh;
+  padding-bottom: 5vh;
+  color: rgb(9, 82, 51);
+}
+p{
+  text-align: center;
+  font-size: 1.4rem;
+  color: rgb(9, 82, 51);
+  padding-bottom: 4vh;
+}
