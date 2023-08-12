@@ -1,0 +1,27 @@
+<app-header></app-header>
+<div class="container ct1">
+  <div *ngIf="item; else elseBlock">
+    <div class="row">
+      <div class="col-6">
+        <img class="hdr" [src]="item.image">
+      </div>
+      <div class="col-6 cl2">
+        <h4>{{item.name}}</h4>
+        <p class="p1">{{item.description}}</p>
+        <h6>Rs {{item.price}}</h6>
+        <div class="row">
+
+          <div class="col-6">
+            <button type="button" class="btn1" (click)="onClickHandler(item)">ADD TO CART</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <ng-template #elseBlock>
+    <div class="d-flex justify-content-center">
+      <h1>Loading...</h1>
+    </div>
+  </ng-template>
+</div>
+<app-footer></app-footer>
