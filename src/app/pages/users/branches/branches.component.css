@@ -46,12 +46,12 @@ h1{
 }
 
 .flip-card-back {
-  background-color: rgba(212, 206, 206, 0.8);
+  background-color: rgba(235, 200, 200, 0.705);
   color: rgb(0, 0, 0);
   transform: rotateY(180deg);
 }
 h1{
   text-align: center;
   padding-bottom: 10vh;
-  color: rgb(9, 82, 51);
+  color: rgb(172, 3, 3);
 }

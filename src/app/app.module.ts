@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './layouts/header/header.component';
@@ -27,6 +26,7 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {HttpClientModule} from "@angular/common/http";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {ToastrModule} from "ngx-toastr";
+import { MessageComponent } from './pages/users/message/message.component';
 
 @NgModule({
   declarations: [
@@ -49,7 +49,8 @@ import {ToastrModule} from "ngx-toastr";
     BranchesComponent,
     ShopComponent,
     ThanksComponent,
-    ItemComponent
+    ItemComponent,
+    MessageComponent
   ],
   imports: [
     BrowserModule,
@@ -58,6 +59,7 @@ import {ToastrModule} from "ngx-toastr";
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
+    
     BrowserAnimationsModule,
     ToastrModule.forRoot({
       timeOut:5000,

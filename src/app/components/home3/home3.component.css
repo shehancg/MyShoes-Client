@@ -4,31 +4,34 @@
 
 }
 .hdr{
-  height: 78vh;
+  height: 82vh;
   width: 100%;
+  padding-top: 8vh;
 }
 .hdr2{
-  height: 39vh;
+  height: 82vh;
   width: 100%;
-  padding-top: 2vh;
+  padding-top: 8vh;
+  
 }
-.hdr1{
-  height: 39vh;
+.hdr1, .hdr3{
+  height: 78vh;
   width: 100%;
-  padding-bottom: 2vh;
+  
 }
 .cl1{
   padding-left: 2%;
 }
+
 h1{
+  padding-top: 14vh;
+  padding-bottom: 8VH;
+  color: rgb(172, 3, 3);
   text-align: center;
-  padding-top: 10vh;
-  padding-bottom: 5vh;
-  color: rgb(9, 82, 51);
 }
 p{
   text-align: center;
   font-size: 1.4rem;
-  color: rgb(9, 82, 51);
+  color: rgb(145, 80, 80);
   padding-bottom: 4vh;
 }

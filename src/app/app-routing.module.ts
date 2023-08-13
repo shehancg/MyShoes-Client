@@ -17,6 +17,7 @@ import {ChatComponent} from "./components/chat/chat.component";
 import {AdditemComponent} from "./pages/admin/additem/additem.component";
 import {ItemComponent} from "./pages/users/item/item.component";
 import {BranchesComponent} from "./pages/users/branches/branches.component";
+import { MessageComponent } from './pages/users/message/message.component';
 
 const routes: Routes = [
   {path:'',component:HomeComponent},
@@ -35,7 +36,8 @@ const routes: Routes = [
   {path:'adminorders',component:AdminordersComponent},
   {path:'adminitems',component:AdminitemsComponent},
   {path:'chat',component:ChatComponent},
-  {path:'additem',component:AdditemComponent}
+  {path:'additem',component:AdditemComponent},
+  {path:'message',component:MessageComponent}
 ];
 
 @NgModule({
