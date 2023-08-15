@@ -1,6 +1,6 @@
 .ct1{
   padding-top: 15vh;
-  padding-bottom: 25vh;
+  padding-bottom: 10vh;
 }
 .user{
   width: 70%;
@@ -9,8 +9,13 @@
   border-radius: 15px;
   background-color: rgb(167, 75, 75);
   font-size: 2rem;
-
 }
+
+h2{
+  text-align: right;
+  color: rgb(172, 3, 3);
+}
+
 .bi-bandaid{
   padding-right: 3%;
 }

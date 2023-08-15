@@ -15,8 +15,6 @@ export class ChatComponent {
   }
 
   ngOnInit() {
-
-
     let uname = '';
 
     this.route.queryParams.subscribe(params => {
@@ -58,16 +56,31 @@ export class ChatComponent {
         reader.readAsText(data);
       }
 
-
       messages.innerHTML += `\n<span class="chattxt" style="font-family: 'Poppins', sans-serif;
       font-size: 14px;
       width: 100%;
       margin-left: 12px;
+      padding: 10px;
+      border-radius: 15px;
+      color: #ffffff;
+      background: linear-gradient(to bottom, #02c4e1, #1397f8);
       overflow-x: hidden;"> <span class="uname" style="font-family: 'Poppins', sans-serif;">${sender}</span><span style="margin-right: 8px;">:</span> ${message}</span>\n`;
       messages.scrollTop = messages.scrollHeight;
       messageBox.value = '';
 
-
+      /*messages.innerHTML += `\n<span class="chattxt" style="font-family: 'Poppins', sans-serif;
+              font-size: 14px;
+              max-width: 70%; /!* Adjust the maximum width of the chat bubble *!/
+              padding: 10px;
+              border-radius: 15px; /!* Create curved shape with border-radius *!/
+              background: linear-gradient(to bottom, #02c4e1, #1397f8);
+              color: #ffffff;
+              margin-bottom: 20px; /!* Adjust spacing between chat bubbles *!/
+              margin-top: 10px;
+              overflow-x: auto;
+              position: relative;"> <span class="uname" style="font-family: 'Poppins', sans-serif;">${sender}</span><span style="margin-right: 8px;">:</span> ${message}</span>\n`;
+      messages.scrollTop = messages.scrollHeight;
+      messageBox.value = '';*/
     }
 
     function init() {
@@ -108,7 +121,6 @@ export class ChatComponent {
     });
 
     init();
-
 
   }
 

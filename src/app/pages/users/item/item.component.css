@@ -13,7 +13,7 @@ h4{
 h6{
   padding-top: 5vh;
   font-size: 1.5rem;
-  color: green;
+  color: #703c00;
 }
 .p1{
   font-size: 1.3rem;
@@ -21,10 +21,11 @@ h6{
 .btn1{
   width: 60%;
   margin-top: 8vh;
-  background-color: rgb(22, 143, 62);
-  border-color: rgb(22, 143, 62);
+  background-color: rgb(172, 3, 3);
+  border-color: rgb(172, 3, 3);
   border-radius: 5px;
   height: 7vh;
+  color: #f8f8f8;
   font-weight: 600;
 }
 .quantity__input{

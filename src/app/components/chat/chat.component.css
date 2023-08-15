@@ -1,17 +1,16 @@
 .chattxt
 {
-  font-family: 'poppins-r';
+  font-family: 'poppins-r', serif;
   font-size: 14px;
   margin-bottom: 35px!important;
   width: 100%;
   margin-left: 12px;
   overflow-x: hidden;
-
 }
 
 #messages{
   font-size: 14px;
-  font-family: 'poppins-r';
+  font-family: 'poppins-r', serif;
   overflow-x: hidden;
 
 }
@@ -22,10 +21,11 @@
   overflow-y: scroll;
   overflow-x: hidden;
   background-color: rgb(228, 228, 228);
-  border: 1px dashed rgb(196, 196, 196);
+  border: 1px solid rgb(196, 196, 196);
   border-radius: 8px;
   padding:4px;
-  margin-top: 100px;
+  margin-top: 40px;
+  margin-right: 25px;
 }
 .chatdiv
 {
@@ -59,7 +59,7 @@
   width: 278px;
   height: 40px;
   padding: 4px;
-  border: 1px solid rgb(213, 213, 213);
+  border: 1px solid rgb(172, 3, 3);
   background-color: rgb(255, 255, 255);
   font-family: 'Poppins', sans-serif;
   color: black;
