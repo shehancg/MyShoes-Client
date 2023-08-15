@@ -2,7 +2,7 @@
 <div class="container ct1">
   <div *ngIf="item; else elseBlock">
     <div class="row">
-      <div class="col-6">
+      <div class="col-6" style="padding: 0">
         <img class="hdr" [src]="item.image">
       </div>
       <div class="col-6 cl2">
@@ -12,7 +12,7 @@
         <div class="row">
 
           <div class="col-6">
-            <button type="button" class="btn1" (click)="onClickHandler(item)">ADD TO CART</button>
+            <button type="button" class="btn1" (click)="onClickHandler(item)">ADD TO CART &nbsp;<i class="bi bi-cart-plus"></i></button>
           </div>
         </div>
       </div>
