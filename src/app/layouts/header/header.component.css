@@ -1,10 +1,10 @@
 .hdr{
   margin-left: 40%;
-  margin-top: 4vh;
+  margin-top: 2vh;
 }
 ul {
   list-style-type: none;
-  margin: 40;
+  /*margin: 40px;*/
   padding-left: 20%;
   overflow: hidden;
   background-color: #ffffff;
@@ -21,7 +21,7 @@ li a {
   text-align: center;
   padding: 24px 46px;
   text-decoration: none;
-  
+
 }
 
 li a:hover {

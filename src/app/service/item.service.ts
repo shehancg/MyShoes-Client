@@ -6,7 +6,7 @@ import {Observable} from 'rxjs';
   providedIn: 'root'
 })
 export class ItemService {
-  private url = 'http://localhost:7000/api';
+  private url = 'http://localhost:3000/api';
 
   constructor(private httpClient: HttpClient) {
   }
@@ -19,8 +19,8 @@ export class ItemService {
     return this.httpClient.get<any>(`${this.url}/items/${id}`)
   }
 
-  DeleteItem() {
-    return this.httpClient.delete(`${this.url}/items/:id`);
+  DeleteItem(id: string) {
+    return this.httpClient.delete(`${this.url}/items/${id}`);
   }
 
   CreateItem(data: any): Observable<any> {

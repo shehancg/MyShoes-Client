@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators, FormControl } from '@angular/forms';
-import { ActivatedRoute, Router } from '@angular/router';
 import { ItemService } from 'src/app/service/item.service'
 
 @Component({
@@ -8,24 +7,39 @@ import { ItemService } from 'src/app/service/item.service'
   templateUrl: './additem.component.html',
   styleUrls: ['./additem.component.css']
 })
-export class AdditemComponent implements OnInit{
+export class AdditemComponent implements OnInit {
   createItemForm!: FormGroup;
+  selectedFile!: File; // Store the selected file
 
   constructor(private itemService: ItemService) { }
 
   ngOnInit() {
     this.createItemForm = new FormGroup({
-      name: new FormControl('name', [Validators.required]),
-      description: new FormControl('description', [Validators.required]),
-      image: new FormControl('image'),
-      price: new FormControl('price', [Validators.required]),
-      countInStock: new FormControl('countInStock', [Validators.required])
+      name: new FormControl('', [Validators.required]),
+      description: new FormControl('', [Validators.required]),
+      image: new FormControl(''),
+      price: new FormControl('', [Validators.required]),
+      countInStock: new FormControl('', [Validators.required])
     });
+  }
+
+  // Handle file selection
+  onFileSelected(event: any) {
+    this.selectedFile = event.target.files[0];
   }
 
   itemSubmit() {
     const item = this.createItemForm.value;
-    this.itemService.CreateItem(item)
+
+    // Create FormData and append the selected file
+    const formData = new FormData();
+    formData.append('name', item.name);
+    formData.append('description', item.description);
+    formData.append('image', this.selectedFile);
+    formData.append('price', item.price);
+    formData.append('countInStock', item.countInStock);
+
+    this.itemService.CreateItem(formData)
       .subscribe(data => {
         console.log('Item created successfully');
       }, (error: any) => {
@@ -33,4 +47,3 @@ export class AdditemComponent implements OnInit{
       });
   }
 }
-

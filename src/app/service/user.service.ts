@@ -7,7 +7,7 @@ import { Observable, Subject, catchError, pipe, throwError } from 'rxjs';
   providedIn: 'root'
 })
 export class UserService {
-  private url = 'http://localhost:7000/api';
+  private url = 'http://localhost:3000/api';
   private userss$: Subject<User[]> = new Subject();
 
   constructor(private httpClient: HttpClient) { }

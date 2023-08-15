@@ -28,8 +28,8 @@ export class LoginComponent implements OnInit{
   get name() { return this.registerForm.get('name')!; }
   get email() { return this.registerForm.get('email')!; }
   get password() { return this.registerForm.get('password')!; }
-  get phone() { return this.registerForm.get('phone')!; }
-  get address() { return this.registerForm.get('address')!; }
+  get phone() { return this.registerForm.get('phoneNo')!; }
+  get address() { return this.registerForm.get('location')!; }
 
   ngOnInit() {
     this.initialState.subscribe(user => {
@@ -37,8 +37,8 @@ export class LoginComponent implements OnInit{
         name: [ user.name, [Validators.required] ],
         email: [ user.email, [ Validators.required, Validators.minLength(5) ] ],
         password: [ user.password, [ Validators.required] ],
-        phone: [ user.phone, [Validators.required] ],
-        address: [ user.address, [Validators.required] ],
+        phoneNo: [ user.phone, [Validators.required] ],
+        location: [ user.address, [Validators.required] ],
         //isAdmin: [user.isAdmin, [Validators.required]]
       });
       this.loginForm = this.fb.group({
